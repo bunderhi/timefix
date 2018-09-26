@@ -7,14 +7,14 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
   nodelet
   roscpp
-  std_msgs
+  sensor_msgs
 )
 
 include_directories(${catkin_INCLUDE_DIRS})
 
 catkin_package(
    LIBRARIES nodelet_timefix
-   CATKIN_DEPENDS nodelet roscpp rospy std_msgs
+   CATKIN_DEPENDS nodelet roscpp rospy sensor_msgs
 )
 
 

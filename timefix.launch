@@ -4,6 +4,7 @@
   </node>		
 
   <node pkg="nodelet" type="nodelet" name="Timefix" args="standalone nodelet_timefix/Timefix" output="screen" clear_params="true">
+    <remap from="/Timefix/incoming" to="/camera/imu/data_raw"/>
   </node>		  
   
 </launch>
