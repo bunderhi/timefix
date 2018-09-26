@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager"  args="manager" output="screen" clear_params="true">
+   <param name="num_worker_threads" value="1"/>
+  </node>		
+
+  <node pkg="nodelet" type="nodelet" name="Timefix" args="standalone nodelet_timefix/Timefix" output="screen" clear_params="true">
+  </node>		  
+  
+</launch>
